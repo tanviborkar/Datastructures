@@ -61,4 +61,12 @@ public class ArrayQueue<E> implements Queue<E> {
 			return elements[front];
 		}
 	}
+	
+	public void displayQueueElements(){
+		int count = 0;
+		while(count < sizeOfElements){
+			System.out.println(elements[(front + count)%elements.length]);
+			count++;
+		}
+	}
 }
